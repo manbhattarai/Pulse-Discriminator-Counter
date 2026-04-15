@@ -11,4 +11,5 @@ The FPGA could also be operated at a slower rate, in which case the FIFO will bu
 
 A minimal schematic of this design is shown here, along with test result obtained for each module.
 ![Alt text](./asset/PhotonCounter_RP_TOF.jpg)
+(The NIM disc signal is derived from a NIM discriminator and pulse converter unit, displayed here for comparision with the RP based discriminator.)
 
