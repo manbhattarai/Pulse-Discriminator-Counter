@@ -10,4 +10,5 @@ In the current design, the ADC clock is operating at 125 MHz (max achievable in 
 The FPGA could also be operated at a slower rate, in which case the FIFO will buffer the data transfer between the ADC and the FPGA logic stages. However this would normally require implementing a deeper FIFO to ensure no incoming data in the duration of interest is missed.
 
 A minimal schematic of this design is shown here, along with test result obtained for each module.
+![Alt text](./images/screenshot.png)
 
