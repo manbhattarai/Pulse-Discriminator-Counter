@@ -1,6 +1,6 @@
 # Pulse-Counter
 This module implements a photon signal discrimination and counting hardware on a Red Pitaya board for a time-of-flight like measurement. 
-A C-code software is implemented to interface with the hardware that returns number of counts as a function of bin index. The counting is performed in time bins of width 10 r"$\mu$"s. A brief description of the implementation is described next.
+A C-code software is implemented to interface with the hardware that returns number of counts as a function of bin index. The counting is performed in time bins of width 10 &micro s. A brief description of the implementation is described next.
 
 A rising edge of a trigger signal (at 10 Hz) initiates a counting sequence. A 100 kHz clock signal, internally generated and referred to as the bin-clock, is used to count and index bins. Within each bin the number of input pulses received are counted using a 250 MHz clock (derived from the ADC clock). The counting is continuously performed till the bin number reaches 3000 (relevant in the experiment) and the data is temporarily stored in a memory implemented within the fabric. On the falling edge of the trigger signal, the software which directly interfaces with AXI GPIO ports, can be used to read-out the counts vs bin-index data. An analog output monitor of the counter data is also generated at the DAC output port of the Red Pitaya.
 
