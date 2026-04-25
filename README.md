@@ -1,4 +1,4 @@
-# Pulse-Counter
+# Photon-Counter
 This module implements a photon signal discrimination and counting hardware on a Red Pitaya board for a time-of-flight like measurement. 
 A C-code software is implemented to interface with the hardware that returns number of counts as a function of bin index. The counting is performed in time bins of width 10 &micro;s. A brief description of the implementation is described next.
 
