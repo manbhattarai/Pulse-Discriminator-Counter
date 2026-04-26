@@ -60,8 +60,8 @@ The compile code can be executed with the following syntax to read the count val
   <pre><code>./a.out 13000 1 3001 2</code></pre>
 </div>
 **Notes:**
-- Counter memory resets on YAG trigger rising edge
-- Bin 0 is reserved; use bins 1-3000 for data acquisition
+- Counter memory resets on YAG trigger rising edge <br>
+- Bin 0 is reserved; use bins 1-3000 for data acquisition <br>
 - Bin numbers > 3000 return count value of 0
 
 
