@@ -13,10 +13,11 @@ A minimal schematic of this design is shown here, along with test result obtaine
 ![Alt text](./asset/PhotonCounter_RP_TOF.jpg)
 (The NIM disc signal is derived from a NIM discriminator and pulse converter unit, displayed here for comparision with the RP based discriminator.)
 
-# Operation
+# Pins
 The relevant I/O pins and ports are
-1. Yag trigger
-2. Discriminator monitor
-3. Analog pulse input
-4. Counter analog output
-5. 
+
+| Header 1 | Header 2 |
+| -------- | -------- |
+| Row 1, Col 1 | Row 1, Col 2 |
+| Row 2, Col 1 | Row 2, Col 2 |
+
