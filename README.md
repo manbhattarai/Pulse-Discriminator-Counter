@@ -38,8 +38,14 @@ The design contains AXI GPIOs that can be accessed by software. A sample C code 
 # Usage
 The provided C code counter_clock.c can be used to read the count values as a function of bin number. Bin number goes from 1-3001, any intermediate values may be used as needed.
 The following commands can be run in the command line of the RP to compile and execute it.
-` gcc counter_clock.c
-` ./a.out 13000 1 3001 2
+
+<div>
+  <button class="copy-button" onclick="copyToClipboard(this.parentElement.nextElementSibling.textContent)"></button>
+  <pre><code>gcc counter_clock.c <br>
+./a.out 13000 1 3001 2</code></pre>
+</div>
+
+
 
 
 
