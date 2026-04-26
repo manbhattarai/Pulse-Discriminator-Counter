@@ -13,9 +13,8 @@ A minimal schematic of this design is shown here, along with test result obtaine
 ![Alt text](./asset/PhotonCounter_RP_TOF.jpg)
 (The NIM disc signal is derived from a NIM discriminator and pulse converter unit, displayed here for comparision with the RP based discriminator.)
 
-# Pins
-The relevant I/O pins and ports are
-
+# Input/Output 
+The relevant I/O pins and ports on the board are
 | Name | Pin/Port |  Type | Description |
 | -------- | -------- | -------- | -------- |
 | YAG_Trigger | DIO4_P | Input | Row 1, Col 2 |
@@ -23,5 +22,19 @@ The relevant I/O pins and ports are
 | YAG_Trigger Monitor| DIO0_N  | Output |Row 1, Col 2 |
 | Pulse Input | RF Input 1 | Input |Row 1, Col 2 |
 | Counter Analog Out | RF Output 1 | Output |Row 1, Col 2 |
+
+The design contains AXI GPIOs that can be accessed by software. A sample C code is provided.
+| Name | Memory Address |  Type | Description |
+| -------- | -------- | -------- | -------- |
+| axi_gpio_0 | 0x4120_0000 | Input |12 bit memory address to read the content of the counter RAM |
+| axi_gpio_1 | 0x4121_0000  | Output | 14 bit threshold value.  |
+| axi_gpio_2| 0x4122_0000  | Input | 8 bit. Count value at the memory address specified by axi_gpio_0  |
+| axi_gpio_3 | 0x4123_0000 | Output | 1 bit. Read the YAG_trigger signal |
+| pll_locked_out| 0x4124_0000 | Output | 1 bit. Read the locked state of the PLL. 1 represents locked, and 0 unlocked. |
+| empty_full| 0x4125_0000 | Output | 2 bit. FIFO empty and full signal. Bit 0 represnts if full, and Bit 1 represnets if empty. |
+| axi_gpio_4| 0x4126_0000 | Output | 1 bit. TTL signal that goes high when the signal meets the threshold condition. |
+| disc_width| 0x4127_0000 | Input |2 bit. Values between 0,1,2,3. Discriminator output width is 2^(n+1) clock cycles, when the input is n.  |
+
+
 
 
