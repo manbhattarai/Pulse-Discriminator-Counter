@@ -14,3 +14,4 @@ A minimal schematic of this design is shown here, along with test result obtaine
 (The NIM disc signal is derived from a NIM discriminator and pulse converter unit, displayed here for comparision with the RP based discriminator.)
 
 # Operation
+The relevant I/O pins and ports are
