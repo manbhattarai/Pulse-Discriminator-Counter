@@ -13,3 +13,4 @@ A minimal schematic of this design is shown here, along with test result obtaine
 ![Alt text](./asset/PhotonCounter_RP_TOF.jpg)
 (The NIM disc signal is derived from a NIM discriminator and pulse converter unit, displayed here for comparision with the RP based discriminator.)
 
+# Operation
