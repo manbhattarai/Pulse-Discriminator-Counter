@@ -1,3 +1,11 @@
+# Photon Counter - Time-of-Flight Measurement System
+
+[![Platform](https://img.shields.io/badge/Platform-Red%20Pitaya-red)](https://redpitaya.com/)
+[![FPGA](https://img.shields.io/badge/FPGA-Zynq--7010-blue)](https://www.xilinx.com/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+A hardware photon counting and discrimination system implemented on Red Pitaya for time-of-flight measurements. Features FPGA-based signal discrimination, multi-clock domain handling, and real-time data acquisition.
+
 # Photon-Counter
 This module implements a photon signal discrimination and counting hardware on a Red Pitaya board for a time-of-flight like measurement. 
 A C-code software is implemented to interface with the hardware that returns number of counts as a function of bin index. The counting is performed in time bins of width 10 &micro;s. A brief description of the implementation is described next.
