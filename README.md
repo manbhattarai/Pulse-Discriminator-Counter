@@ -45,6 +45,11 @@ The design contains AXI GPIOs that can be accessed by software. A sample C code 
 | 3 | 16 | 64 ns |
 
 # Usage
+Load the FPGA image file onto the device with the following command on the Red Pitaya terminal.
+<div>
+  <button class="copy-button" onclick="copyToClipboard(this.parentElement.nextElementSibling.textContent)"></button>
+  <pre><code>cat ultimate_counter_250MHz_github.bit > /dev/xdevcfg</code></pre>
+</div>
 The provided C code <i>counter_clock.c</i> can be used to read the count values as a function of bin number. Bin number goes from 1-3001, any intermediate values may be used as needed.
 The following commands can be run in the command line of the RP to compile it.
 <div>
