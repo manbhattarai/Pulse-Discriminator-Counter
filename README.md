@@ -35,6 +35,12 @@ The design contains AXI GPIOs that can be accessed by software. A sample C code 
 | axi_gpio_4| 0x4126_0000 | Output | 1 bit. TTL signal that goes high when the signal meets the threshold condition. |
 | disc_width| 0x4127_0000 | Input |2 bit. Values between 0,1,2,3. Discriminator output width is 2^(n+1) clock cycles, when the input is n.  |
 
+# Usage
+The provided C code counter_clock.c can be used to read the count values as a function of bin number. Bin number goes from 1-3001, any intermediate values may be used as needed.
+The following commands can be run in the command line of the RP to compile and execute it.
+` gcc counter_clock.c
+` ./a.out 13000 1 3001 2
+
 
 
 
