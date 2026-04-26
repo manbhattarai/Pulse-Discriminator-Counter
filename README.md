@@ -16,8 +16,12 @@ A minimal schematic of this design is shown here, along with test result obtaine
 # Pins
 The relevant I/O pins and ports are
 
-| Header 1 | Header 2 |
-| -------- | -------- |
-| Row 1, Col 1 | Row 1, Col 2 |
-| Row 2, Col 1 | Row 2, Col 2 |
+|Name | Pin/Port |  Type | Description |
+| -------- | -------- | -------- |
+| YAG_Trigger | DIO4_P | Input | Row 1, Col 2 |
+| Discriminator Monitor| DIO5_N  | Row 1, Col 2 |
+| YAG_Trigger Monitor| DIO0_N  | Row 1, Col 2 |
+| Pulse Input | RF Input 1 | Row 1, Col 2 |
+| Counter Analog Out | RF Output 1 | Row 1, Col 2 |
+
 
