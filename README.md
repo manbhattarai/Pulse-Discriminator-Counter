@@ -13,6 +13,18 @@ A minimal schematic of this design is shown here, along with test result obtaine
 ![Alt text](./asset/PhotonCounter_RP_TOF.jpg)
 (The NIM disc signal is derived from a NIM discriminator and pulse converter unit, displayed here for comparision with the RP based discriminator.)
 
+## Features
+
+- ⚡ Real-time photon counting at 250 MHz processing rate
+- 🎯 14-bit threshold-based discrimination
+- 📊 3000 time bins with 10 µs resolution
+- 🔄 Robust clock domain crossing with custom FIFO
+- 📡 AXI GPIO interface for software control
+- 🖥️ Analog output monitoring (DAC)
+- ⏱️ Configurable discriminator pulse width (8-64 ns)
+- 🔒 PLL lock monitoring
+
+
 # Input/Output 
 The relevant I/O pins and ports on the board are
 | Name | Pin/Port |  Type | Description |
