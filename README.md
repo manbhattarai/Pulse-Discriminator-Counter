@@ -4,7 +4,7 @@
 [![FPGA](https://img.shields.io/badge/FPGA-Zynq--7010-blue)](https://www.xilinx.com/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-A hardware photon counting and discrimination system implemented on Red Pitaya for time-of-flight measurements. Features FPGA-based signal discrimination, multi-clock domain handling, and real-time data acquisition.
+
 
 # Photon-Counter
 This module implements a photon signal discrimination and counting hardware on a Red Pitaya board for a time-of-flight like measurement. 
