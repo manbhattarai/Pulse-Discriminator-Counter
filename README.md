@@ -15,3 +15,8 @@ A minimal schematic of this design is shown here, along with test result obtaine
 
 # Operation
 The relevant I/O pins and ports are
+1. Yag trigger
+2. Discriminator monitor
+3. Analog pulse input
+4. Counter analog output
+5. 
