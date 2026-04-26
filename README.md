@@ -2,7 +2,6 @@
 
 [![Platform](https://img.shields.io/badge/Platform-Red%20Pitaya-red)](https://redpitaya.com/)
 [![FPGA](https://img.shields.io/badge/FPGA-Zynq--7010-blue)](https://www.xilinx.com/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 
 
@@ -12,13 +11,13 @@ A C-code software is implemented to interface with the hardware that returns num
 
 ## Features
 
-- ⚡ Real-time photon counting at 250 MHz processing rate
-- 🎯 14-bit threshold-based discrimination
-- 📊 3000 time bins with 10 µs resolution
-- 🔄 Robust clock domain crossing with custom FIFO
-- 📡 AXI GPIO interface for software control
-- 🖥️ Analog output monitoring (DAC)
-- ⏱️ Configurable discriminator pulse width (8-64 ns)
+- Real-time photon counting at 250 MHz processing rate
+- 14-bit threshold-based discrimination
+- 3000 time bins with 10 µs resolution
+- Robust clock domain crossing with custom FIFO
+- AXI GPIO interface for software control
+- Analog output monitoring (DAC)
+- Configurable discriminator pulse width (8-64 ns)
 
 ## Hardware Requirements
 
