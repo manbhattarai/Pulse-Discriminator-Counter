@@ -27,7 +27,7 @@ The design contains AXI GPIOs that can be accessed by software. A sample C code 
 | Name | Memory Address |  Type | Description |
 | -------- | -------- | -------- | -------- |
 | axi_gpio_0 | 0x4120_0000 | Input |12 bit. Memory address to read the content of the counter RAM |
-| axi_gpio_1 | 0x4121_0000  | Output | 14 bit. Threshold value. The 14-bit ADC uses 2's complement; a value larger than 2^13 represents negative value. Threshold is met if the magnitude of the signal is larger than the magnitude of threshold value. |
+| axi_gpio_1 | 0x4121_0000  | Output | 14 bit. Threshold value (unsigned input, interpreted as 14-bit 2's complement by hardware). Values 0-8191 represent positive thresholds, values 8192-16383 represent negative thresholds. Threshold is met when \|signal\| > \|threshold\| |
 | axi_gpio_2| 0x4122_0000  | Input | 8 bit. Count value at the memory address specified by axi_gpio_0  |
 | axi_gpio_3 | 0x4123_0000 | Output | 1 bit. Read the YAG_trigger signal |
 | pll_locked_out| 0x4124_0000 | Output | 1 bit. Read the locked state of the PLL. 1 represents locked, and 0 unlocked. |
