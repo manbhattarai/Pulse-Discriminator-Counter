@@ -23,10 +23,9 @@ A minimal schematic of this design is shown here, along with test result obtaine
 - 🖥️ Analog output monitoring (DAC)
 - ⏱️ Configurable discriminator pulse width (8-64 ns)
 
-- ## Hardware Requirements
+## Hardware Requirements
 
-- **Board:** Red Pitaya STEMlab 125-14
-- **FPGA:** Xilinx Zynq-7010 (xc7z010clg400-1)
+- **Board:** Red Pitaya STEMlab 125-14 Xilinx Zynq-7010 (xc7z010clg400-1)
 - **Development Tools:** 
   - Vivado 2020.2 or later
   - GCC compiler (on Red Pitaya)
