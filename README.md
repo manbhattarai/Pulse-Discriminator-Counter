@@ -41,10 +41,13 @@ The following commands can be run in the command line of the RP to compile and e
 
 <div>
   <button class="copy-button" onclick="copyToClipboard(this.parentElement.nextElementSibling.textContent)"></button>
-  <pre><code>gcc counter_clock.c <br>
-./a.out 13000 1 3001 2</code></pre>
+  <pre><code>gcc counter_clock.c</code></pre>
 </div>
 
+<div>
+  <button class="copy-button" onclick="copyToClipboard(this.parentElement.nextElementSibling.textContent)"></button>
+  <pre><code>./a.out 13000 1 3001 2</code></pre>
+</div>
 
 
 
