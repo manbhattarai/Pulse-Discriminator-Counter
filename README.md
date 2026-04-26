@@ -22,7 +22,18 @@ A minimal schematic of this design is shown here, along with test result obtaine
 - 📡 AXI GPIO interface for software control
 - 🖥️ Analog output monitoring (DAC)
 - ⏱️ Configurable discriminator pulse width (8-64 ns)
-- 🔒 PLL lock monitoring
+
+- ## Hardware Requirements
+
+- **Board:** Red Pitaya STEMlab 125-14
+- **FPGA:** Xilinx Zynq-7010 (xc7z010clg400-1)
+- **Development Tools:** 
+  - Vivado 2020.2 or later
+  - GCC compiler (on Red Pitaya)
+- **External Connections:**
+  - PMT or pulse source → RF Input 1
+  - Trigger signal (10 Hz) → DIO4_P
+  - Optional: Oscilloscope monitoring on DIO5_N, DIO0_N
 
 
 # Input/Output 
