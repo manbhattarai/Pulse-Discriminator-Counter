@@ -43,7 +43,8 @@ The following commands can be run in the command line of the RP to compile it.
   <pre><code>gcc counter_clock.c</code></pre>
 </div>
 The compile code can be executed with the following syntax to read the count values.
-` ./a.out <threshold> <bin_start> <bin_end> <disc_width> `
+```bash
+./a.out \<threshold\> \<bin_start\> \<bin_end\> \<disc_width\>
   For instance,
 <div>
   <button class="copy-button" onclick="copyToClipboard(this.parentElement.nextElementSibling.textContent)"></button>
