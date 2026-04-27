@@ -103,5 +103,6 @@ The compiled code can be executed with the following syntax to read the count va
 - Bin numbers > 3000 return count value of 0
 
 
-
+## Modifications
+The project can be built as a Vivado project using the <i>photon_counter.tcl</i> and necessary modifications can be made. 
 
