@@ -46,7 +46,7 @@ A minimal schematic of this design is shown here, along with test result obtaine
 (The NIM disc signal is derived from a NIM discriminator and pulse converter unit, displayed here for comparision with the RP based discriminator.)
 
 
-# Input/Output 
+## Input/Output 
 The relevant I/O pins and ports on the board are
 | Name | Pin/Port |  Type | Description |
 | -------- | -------- | -------- | -------- |
@@ -77,7 +77,7 @@ The design contains AXI GPIOs that can be accessed by software. A sample C code 
 | 2 | 8 | 32 ns |
 | 3 | 16 | 64 ns |
 
-# Usage
+## Usage
 Load the FPGA image file onto the device with the following command on the Red Pitaya terminal.
 <div>
   <button class="copy-button" onclick="copyToClipboard(this.parentElement.nextElementSibling.textContent)"></button>
