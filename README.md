@@ -108,3 +108,6 @@ reads the counts registered in bins 1 through 3001, with threshold set at 13000 
 ## Modifications
 The project can be built as a Vivado project using the <i>photon_counter.tcl</i> and necessary modifications can be made. 
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
