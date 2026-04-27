@@ -98,6 +98,7 @@ and execute it with the following syntax to read the count values.
   <pre><code>./a.out 13000 1 3001 2</code></pre>
 </div>
 reads the counts registered in bins 1 through 3001, with threshold set at 13000 (in 2's complement rep) producing discriminator TTL signal that is 32 ns wide.
+
 **Notes:** <br>
 - Counter memory resets on YAG trigger rising edge <br>
 - Bin 0 is reserved; use bins 1-3000 for data acquisition <br>
