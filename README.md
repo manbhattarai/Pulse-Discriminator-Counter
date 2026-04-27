@@ -77,19 +77,19 @@ The design contains AXI GPIOs that can be accessed by software. A sample C code 
 | 2 | 8 | 32 ns |
 | 3 | 16 | 64 ns |
 
-## Usage
-Load the FPGA image file onto the device with the following command on the Red Pitaya terminal.
+## Installation & Usage
+Copy the bitstream file to the Red Pitaya (e.g. via `scp`) and load the FPGA bitstream file onto the device with the following command on the terminal.
 <div>
   <button class="copy-button" onclick="copyToClipboard(this.parentElement.nextElementSibling.textContent)"></button>
   <pre><code>cat ultimate_counter_250MHz_github.bit > /dev/xdevcfg</code></pre>
 </div>
 The provided C code <i>counter_clock.c</i> can be used to read the count values as a function of bin number. Bin number goes from 1-3001, any intermediate values may be used as needed.
-The following commands can be run in the command line of the RP to compile it.
+Compile the C readout program,
 <div>
   <button class="copy-button" onclick="copyToClipboard(this.parentElement.nextElementSibling.textContent)"></button>
   <pre><code>gcc counter_clock.c</code></pre>
 </div>
-The compiled code can be executed with the following syntax to read the count values.
+and execute it with the following syntax to read the count values.
 
 `./a.out [threshold] [bin_start] [bin_end] [disc_width] `
   For instance,
@@ -97,6 +97,7 @@ The compiled code can be executed with the following syntax to read the count va
   <button class="copy-button" onclick="copyToClipboard(this.parentElement.nextElementSibling.textContent)"></button>
   <pre><code>./a.out 13000 1 3001 2</code></pre>
 </div>
+reads the counts registered in bins 1 through 3001, with threshold set at 13000 (in 2's complement rep) producing discriminator TTL signal that is 32 ns wide.
 **Notes:** <br>
 - Counter memory resets on YAG trigger rising edge <br>
 - Bin 0 is reserved; use bins 1-3000 for data acquisition <br>
