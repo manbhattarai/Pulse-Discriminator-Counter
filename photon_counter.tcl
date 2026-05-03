@@ -20,7 +20,7 @@ puts "Mapping virtual drive V: to $long_path"
 if {$::tcl_platform(platform) == "windows"} {
     catch {exec subst V: /D} ;# Remove existing mapping if any
     exec subst V: $long_path
-    puts "✓ Virtual drive V: created"
+    puts "Virtual drive V: created"
     
     # Use the virtual drive for project
     set build_dir "V:/build"
@@ -94,13 +94,13 @@ if {[file exists $bd_tcl]} {
 
 # Create synthesis run
 if {[get_runs -quiet synth_1] eq ""} {
-    create_run -name synth_1 -flow {Vivado Synthesis 2020} -constrset constrs_1
+    create_run -name synth_1 -flow {Vivado Synthesis} -constrset constrs_1
 }
 current_run -synthesis [get_runs synth_1]
 
 # Create implementation run
 if {[get_runs -quiet impl_1] eq ""} {
-    create_run -name impl_1 -flow {Vivado Implementation 2020} -constrset constrs_1 -parent_run synth_1
+    create_run -name impl_1 -flow {Vivado Implementation} -constrset constrs_1 -parent_run synth_1
 }
 current_run -implementation [get_runs impl_1]
 
