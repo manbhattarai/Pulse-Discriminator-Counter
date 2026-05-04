@@ -102,10 +102,11 @@ current_run -synthesis [get_runs synth_1]
 if {[get_runs -quiet impl_1] eq ""} {
     create_run -name impl_1 -flow {Vivado Implementation} -constrset constrs_1 -parent_run synth_1
 }
+set_property strategy Performance_NetDelay_high [get_runs impl_1]
 current_run -implementation [get_runs impl_1]
 
 puts "=========================================="
-puts "   Project created successfully!"
+puts "✓ Project created successfully!"
 puts "  Location: ${build_dir}/${proj_name}"
 puts "  Open with: vivado ${build_dir}/${proj_name}/${proj_name}.xpr"
 puts "=========================================="
