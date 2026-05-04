@@ -80,14 +80,14 @@ if {[file exists $bd_tcl]} {
     puts "Creating block design from: $bd_tcl"
     source $bd_tcl
     
-    # Generate wrapper
-    set bd_file [get_files -filter {FILE_TYPE == "Block Designs"}]
-    if {$bd_file ne ""} {
-        make_wrapper -files $bd_file -top -import
-        set wrapper_name [file rootname [file tail [get_files *_wrapper.v]]]
-        set_property top $wrapper_name [get_filesets sources_1]
-        puts "Top module set to: $wrapper_name"
-    }
+# Generate wrapper
+set bd_file [get_files -filter {FILE_TYPE == "Block Designs"}]
+if {$bd_file ne ""} {
+    make_wrapper -files $bd_file -top -import
+    set wrapper_name [file rootname [file tail [get_files *_wrapper.v]]]
+    set_property top $wrapper_name [get_filesets sources_1]
+    puts "Top module set to: $wrapper_name"
+}
 } else {
     puts "WARNING: Block design not found: $bd_tcl"
 }
@@ -105,7 +105,7 @@ if {[get_runs -quiet impl_1] eq ""} {
 current_run -implementation [get_runs impl_1]
 
 puts "=========================================="
-puts "  Project created successfully!"
+puts "   Project created successfully!"
 puts "  Location: ${build_dir}/${proj_name}"
 puts "  Open with: vivado ${build_dir}/${proj_name}/${proj_name}.xpr"
 puts "=========================================="
