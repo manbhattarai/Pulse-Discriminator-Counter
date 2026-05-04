@@ -105,7 +105,7 @@ if {[get_runs -quiet impl_1] eq ""} {
 current_run -implementation [get_runs impl_1]
 
 puts "=========================================="
-puts "✓ Project created successfully!"
+puts "  Project created successfully!"
 puts "  Location: ${build_dir}/${proj_name}"
 puts "  Open with: vivado ${build_dir}/${proj_name}/${proj_name}.xpr"
 puts "=========================================="
